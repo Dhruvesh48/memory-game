@@ -1,1 +1,12 @@
-console.log("Background hello");
+function cardsArray(){
+    
+
+}
+
+function flipCards(){
+
+}
+
+function checkCards(){
+    
+}

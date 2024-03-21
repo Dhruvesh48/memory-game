@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+.game-area{
+    padding-right: 10px;
+    
+}
+
 .cards{
     height: 300px;
     width: 200px;
