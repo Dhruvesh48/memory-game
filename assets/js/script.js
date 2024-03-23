@@ -1,6 +1,124 @@
-function cardsArray(){
-    
+document.addEventListener("DOMContentLoaded", function() {
+    createGame();
+})
 
+function createGame(){
+    let cardArray = [
+        {
+            name: 'ace',
+            img: 'assets/images/ace.webp'
+        },
+        {
+            name: 'ace',
+            img: 'assets/images/ace.webp'
+        },
+        {
+            name: 'two',
+            img: 'assets/images/two.webp'
+        },
+        {
+            name: 'two',
+            img: 'assets/images/two.webp'
+        },
+        {
+            name: 'three',
+            img: 'assets/images/three.webp'
+        },
+        {
+            name: 'three',
+            img: 'assets/images/three.webp'
+        },
+        {
+            name: 'four',
+            img: 'assets/images/four.webp'
+        },
+        {
+            name: 'four',
+            img: 'assets/images/four.webp'
+        },
+        {
+            name: 'five',
+            img: 'assets/images/five.webp'
+        },
+        {
+            name: 'five',
+            img: 'assets/images/five.webp'
+        },
+        {
+            name: 'six',
+            img: 'assets/images/six.webp'
+        },
+        {
+            name: 'six',
+            img: 'assets/images/six.webp'
+        },
+        {
+            name: 'seven',
+            img: 'assets/images/seven.webp'
+        },
+        {
+            name: 'seven',
+            img: 'assets/images/seven.webp'
+        },
+        {
+            name: 'eight',
+            img: 'assets/images/eight.webp'
+        },
+        {
+            name: 'eight',
+            img: 'assets/images/eight.webp'
+        },
+        {
+            name: 'nine',
+            img: 'assets/images/nine.webp'
+        },
+        {
+            name: 'nine',
+            img: 'assets/images/nine.webp'
+        },
+        {
+            name: 'ten',
+            img: 'assets/images/ten.webp'
+        },
+        {
+            name: 'ten',
+            img: 'assets/images/ten.webp'
+        },
+        {
+            name: 'jack',
+            img: 'assets/images/jack.webp'
+        },
+        {
+            name: 'jack',
+            img: 'assets/images/jack.webp'
+        },
+        {
+            name: 'queen',
+            img: 'assets/images/queen.webp'
+        },
+        {
+            name: 'queen',
+            img: 'assets/images/queen.webp'
+        },
+        {
+            name: 'king',
+            img: 'assets/images/king.webp'
+        },
+        {
+            name: 'king',
+            img: 'assets/images/king.webp'
+        }
+    ]
+    for(let i = 0; i < cardArray.length; i++){
+        let cards = document.createElement('img');
+        cards.className = 'cards'
+        cards.src = cardArray[i].img;
+        document.getElementById('game-area').appendChild(cards);
+    }
+}
+
+function shuffleCards(array){
+    array.sort(() => Math.random() - 0.5);
 }
 
 function flipCards(){
@@ -10,3 +128,6 @@ function flipCards(){
 function checkCards(){
     
 }
+
+
+
