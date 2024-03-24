@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     createGame();
+    
 })
 
 function createGame(){
@@ -109,12 +110,14 @@ function createGame(){
             img: 'assets/images/king.webp'
         }
     ]
+    shuffleCards(cardArray);
     for(let i = 0; i < cardArray.length; i++){
         let cards = document.createElement('img');
         cards.className = 'cards'
         cards.src = cardArray[i].img;
         document.getElementById('game-area').appendChild(cards);
     }
+    
 }
 
 function shuffleCards(array){
