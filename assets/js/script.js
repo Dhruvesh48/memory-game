@@ -114,22 +114,33 @@ function createGame(){
     for(let i = 0; i < cardArray.length; i++){
         let cards = document.createElement('img');
         cards.className = 'cards'
-        cards.src = cardArray[i].img;
+        cards.src = 'assets/images/back-card.webp';
         document.getElementById('game-area').appendChild(cards);
     }
     
 }
+
+let cardsChosen = [];
+let cardsChosenId = [];
 
 function shuffleCards(array){
     array.sort(() => Math.random() - 0.5);
 }
 
 function flipCards(){
-
+    if(cardsChosen === 2){
+        setTimeout()
+    }
 }
 
 function checkCards(){
-    
+    for(let i = 0; i < cardsChosenId.length; i++){
+        if(cardsChosenId[0] === cardsChosenId[1]){
+            cards.src = 'assets/images/blank-image.webp'
+        }else{
+            cards.src = 'assets/images/back-card.webp'
+        }
+    }
 }
 
 
