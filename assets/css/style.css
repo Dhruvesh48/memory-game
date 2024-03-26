@@ -4,13 +4,21 @@ body{
     background-color: darkcyan;
 }
 
-.game-area{
-    padding-right: 10px;
-    
-}
-
 .cards{
+    padding: 10px;
+    position: relative;
     height: 300px;
     width: 200px;
     margin: 0 10px;
+}
+
+.reset{
+    width: 10%;
+    height: 5%;
+    overflow: auto;
+    align-items: center;
+    position: relative;
+    border: 15px solid;
+    padding: 10px;
+    margin: auto;
 }

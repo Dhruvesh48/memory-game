@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    createGame();
-    
-})
-
-function createGame(){
+    //array of all the images with name
     let cardArray = [
         {
             name: 'ace',
@@ -110,38 +106,58 @@ function createGame(){
             img: 'assets/images/king.webp'
         }
     ]
+    //run the shuffleCards() function
     shuffleCards(cardArray);
-    for(let i = 0; i < cardArray.length; i++){
-        let cards = document.createElement('img');
-        cards.className = 'cards'
-        cards.src = 'assets/images/back-card.webp';
-        document.getElementById('game-area').appendChild(cards);
-    }
-    
-}
 
-let cardsChosen = [];
-let cardsChosenId = [];
+    //created empty array
+    let cardsName = [];
+    let cardsSelected = [];
 
-function shuffleCards(array){
-    array.sort(() => Math.random() - 0.5);
-}
-
-function flipCards(){
-    if(cardsChosen === 2){
-        setTimeout()
-    }
-}
-
-function checkCards(){
-    for(let i = 0; i < cardsChosenId.length; i++){
-        if(cardsChosenId[0] === cardsChosenId[1]){
-            cards.src = 'assets/images/blank-image.webp'
-        }else{
-            cards.src = 'assets/images/back-card.webp'
+    //it loads back card image for all the cards listed in the array
+    function createGame(){
+        for(let i = 0; i < cardArray.length; i++){
+            let cards = document.createElement('img');
+            cards.className = 'cards'
+            cards.src = 'assets/images/back-card.webp';
+            cards.setAttribute('data-id', i);
+            cards.addEventListener('click', flipCards);
+            document.getElementById('game-area').appendChild(cards);
         }
     }
-}
+
+    //it randomise the array using in built math random function
+    function shuffleCards(array){
+        array.sort(() => Math.random() - 0.5);
+    }
+
+    function checkCards(){
+        let cardId = this.getAttribute('data-id');
+        cardsName.push(cardArray[cardId].name);
+        for(let i = 0; i < cardsName.length; i++){
+            if(cardsName[0] != cardsName[1]){
+                this.src = 'assets/images/back-card.webp'
+            }
+        }
+    }
+
+    //it flips the card that is selected by the user
+    function flipCards(){
+        //cards.src = cardArray[i].img;
+        let cardId = this.getAttribute('data-id');
+        this.src = cardArray[cardId].img;
+        cardsSelected.push(cardArray[cardId]);
+        if(cardsSelected == 2){
+            checkCards()
+        }
+    }
+
+
+    createGame();
+    
+})
+
+
+
 
 
 
