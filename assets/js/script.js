@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
         array.sort(() => Math.random() - 0.5);
     }
 
+    //it checks the name cards compare it and hide the cards when user finds the match
     function checkCards(){
         let cards = document.getElementsByClassName('cards');
         let card1 = cardArrayId[0];

@@ -1,7 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Anta;
+}
+
 body{
     background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 60px;
+}
+
+.heading{
+    font-size: 3em;
+    color: #8B0046;
+    letter-spacing: 0.1em;
+}
+
+#game-area{
+    width: 80%;
+    height: 80%;
+    transform: scale(1);
 }
 
 .cards{
@@ -10,15 +43,16 @@ body{
     height: 300px;
     width: 200px;
     margin: 0 10px;
+    transform: scale(.97);
+    transition: transform .2s;
+    cursor: pointer;
 }
 
 .reset{
-    width: 10%;
-    height: 5%;
-    overflow: auto;
-    align-items: center;
-    position: relative;
-    border: 15px solid;
-    padding: 10px;
-    margin: auto;
+    background-color: #ebaca2;
+    color: #267c65;
+    font-size: 1.5em;
+    border-color: #800000;
+    padding: 15px 20px;
+    cursor: pointer;
 }
