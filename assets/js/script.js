@@ -111,7 +111,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //created empty array
     let cardsName = [];
-    let cardsSelected = [];
+    let cardArrayId = [];
+
 
     //it loads back card image for all the cards listed in the array
     function createGame(){
@@ -131,29 +132,37 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function checkCards(){
-        let cardId = this.getAttribute('data-id');
-        cardsName.push(cardArray[cardId].name);
-        for(let i = 0; i < cardsName.length; i++){
-            if(cardsName[0] != cardsName[1]){
-                this.src = 'assets/images/back-card.webp'
-            }
+        let cards = document.getElementsByClassName('cards');
+        let card1 = cardArrayId[0];
+        let card2 = cardArrayId[1];
+        if(cardsName[0] === cardsName[1]){
+            alert('Correct');
+            cards[card1].style.visibility = 'hidden';
+            cards[card2].style.visibility = 'hidden';
+        }else{
+            cards[card1].src = 'assets/images/back-card.webp';
+            cards[card2].src = 'assets/images/back-card.webp';
         }
+        cardsName = [];
+        cardArrayId = [];
     }
+
 
     //it flips the card that is selected by the user
     function flipCards(){
-        //cards.src = cardArray[i].img;
+
         let cardId = this.getAttribute('data-id');
+        cardsName.push(cardArray[cardId].name);
+        cardArrayId.push(cardId);
         this.src = cardArray[cardId].img;
-        cardsSelected.push(cardArray[cardId]);
-        if(cardsSelected == 2){
-            checkCards()
+        if(cardsName.length === 2){
+            setTimeout(checkCards, 500);
         }
     }
 
 
     createGame();
-    
+
 })
 
 
