@@ -8,11 +8,24 @@
 }
 
 body{
-    background-color: darkcyan;
+    background: linear-gradient(-45deg, #C5EBAA, #43766C, #7BD3EA, #910A67);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .container{
@@ -26,14 +39,20 @@ body{
 }
 
 .heading{
-    font-size: 3em;
-    color: #8B0046;
+    font-size: 4em;
+    background: linear-gradient(to right, #016815 0%, #4b0082 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     letter-spacing: 0.1em;
 }
 
 #game-area{
     width: 80%;
     height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     transform: scale(1);
 }
 
@@ -43,8 +62,6 @@ body{
     height: 300px;
     width: 200px;
     margin: 0 10px;
-    transform: scale(.97);
-    transition: transform .2s;
     cursor: pointer;
 }
 
