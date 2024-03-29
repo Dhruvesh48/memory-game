@@ -3,107 +3,133 @@ document.addEventListener("DOMContentLoaded", function() {
     let cardArray = [
         {
             name: 'ace',
-            img: 'assets/images/ace.webp'
+            img: 'assets/images/ace.webp',
+            alt: 'Ace playing card'
         },
         {
             name: 'ace',
-            img: 'assets/images/ace.webp'
+            img: 'assets/images/ace.webp',
+            alt: 'Ace playing card'
         },
         {
             name: 'two',
-            img: 'assets/images/two.webp'
+            img: 'assets/images/two.webp',
+            alt: '2 playing card'
         },
         {
             name: 'two',
-            img: 'assets/images/two.webp'
+            img: 'assets/images/two.webp',
+            alt: '2 playing card'
         },
         {
             name: 'three',
-            img: 'assets/images/three.webp'
+            img: 'assets/images/three.webp',
+            alt: '3 playing card'
         },
         {
             name: 'three',
-            img: 'assets/images/three.webp'
+            img: 'assets/images/three.webp',
+            alt: '3 playing card'
         },
         {
             name: 'four',
-            img: 'assets/images/four.webp'
+            img: 'assets/images/four.webp',
+            alt: '4 playing card'
         },
         {
             name: 'four',
-            img: 'assets/images/four.webp'
+            img: 'assets/images/four.webp',
+            alt: '4 playing card'
         },
         {
             name: 'five',
-            img: 'assets/images/five.webp'
+            img: 'assets/images/five.webp',
+            alt: '5 playing card'
         },
         {
             name: 'five',
-            img: 'assets/images/five.webp'
+            img: 'assets/images/five.webp',
+            alt: '5 playing card'
         },
         {
             name: 'six',
-            img: 'assets/images/six.webp'
+            img: 'assets/images/six.webp',
+            alt: '6 playing card'
         },
         {
             name: 'six',
-            img: 'assets/images/six.webp'
+            img: 'assets/images/six.webp',
+            alt: '6 playing card'
         },
         {
             name: 'seven',
-            img: 'assets/images/seven.webp'
+            img: 'assets/images/seven.webp',
+            alt: '7 playing card'
         },
         {
             name: 'seven',
-            img: 'assets/images/seven.webp'
+            img: 'assets/images/seven.webp',
+            alt: '7 playing card'
         },
         {
             name: 'eight',
-            img: 'assets/images/eight.webp'
+            img: 'assets/images/eight.webp',
+            alt: '8 playing card'
         },
         {
             name: 'eight',
-            img: 'assets/images/eight.webp'
+            img: 'assets/images/eight.webp',
+            alt: '8 playing card'
         },
         {
             name: 'nine',
-            img: 'assets/images/nine.webp'
+            img: 'assets/images/nine.webp',
+            alt: '9 playing card'
         },
         {
             name: 'nine',
-            img: 'assets/images/nine.webp'
+            img: 'assets/images/nine.webp',
+            alt: '9 playing card'
         },
         {
             name: 'ten',
-            img: 'assets/images/ten.webp'
+            img: 'assets/images/ten.webp',
+            alt: '10 playing card'
         },
         {
             name: 'ten',
-            img: 'assets/images/ten.webp'
+            img: 'assets/images/ten.webp',
+            alt: '10 playing card'
         },
         {
             name: 'jack',
-            img: 'assets/images/jack.webp'
+            img: 'assets/images/jack.webp',
+            alt: 'Jack playing card'
         },
         {
             name: 'jack',
-            img: 'assets/images/jack.webp'
+            img: 'assets/images/jack.webp',
+            alt: 'Jack playing card'
         },
         {
             name: 'queen',
-            img: 'assets/images/queen.webp'
+            img: 'assets/images/queen.webp',
+            alt: 'Queen playing card'
         },
         {
             name: 'queen',
-            img: 'assets/images/queen.webp'
+            img: 'assets/images/queen.webp',
+            alt: 'Queen playing card'
         },
         {
             name: 'king',
-            img: 'assets/images/king.webp'
+            img: 'assets/images/king.webp',
+            alt: 'King playing card'
         },
         {
             name: 'king',
-            img: 'assets/images/king.webp'
+            img: 'assets/images/king.webp',
+            alt: 'King playing card'
         }
     ]
     //run the shuffleCards() function
@@ -119,7 +145,8 @@ document.addEventListener("DOMContentLoaded", function() {
         for(let i = 0; i < cardArray.length; i++){
             let cards = document.createElement('img');
             cards.className = 'cards'
-            cards.src = 'assets/images/back-card.webp';
+            cards.alt = cardArray[i].alt;
+            cards.src = cardArray[i].img;
             cards.setAttribute('data-id', i);
             cards.addEventListener('click', flipCards);
             document.getElementById('game-area').appendChild(cards);
