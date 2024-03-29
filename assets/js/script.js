@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let cards = document.createElement('img');
             cards.className = 'cards'
             cards.alt = cardArray[i].alt;
-            cards.src = cardArray[i].img;
+            cards.src = 'assets/images/back-card.webp';
             cards.setAttribute('data-id', i);
             cards.addEventListener('click', flipCards);
             document.getElementById('game-area').appendChild(cards);
@@ -156,6 +156,19 @@ document.addEventListener("DOMContentLoaded", function() {
     //it randomise the array using in built math random function
     function shuffleCards(array){
         array.sort(() => Math.random() - 0.5);
+    }
+
+
+    //it flips the card that is selected by the user
+    function flipCards(){
+
+        let cardId = this.getAttribute('data-id');
+        cardsName.push(cardArray[cardId].name);
+        cardArrayId.push(cardId);
+        this.src = cardArray[cardId].img;
+        if(cardsName.length === 2){
+            setTimeout(checkCards, 500);
+        }
     }
 
     //it checks the name cards compare it and hide the cards when user finds the match
@@ -174,21 +187,7 @@ document.addEventListener("DOMContentLoaded", function() {
         cardsName = [];
         cardArrayId = [];
     }
-
-
-    //it flips the card that is selected by the user
-    function flipCards(){
-
-        let cardId = this.getAttribute('data-id');
-        cardsName.push(cardArray[cardId].name);
-        cardArrayId.push(cardId);
-        this.src = cardArray[cardId].img;
-        if(cardsName.length === 2){
-            setTimeout(checkCards, 500);
-        }
-    }
-
-
+    
     createGame();
 
 })
