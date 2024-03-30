@@ -101,6 +101,7 @@ The Index Page is divided into Four sections:
 ![Game-section](docs/game-section.png)
 - Alert section
   - This is where the user receives an alert after they choose two cards, indicating whether they are correct, incorrect or if they selected the same card.
+
 ![Correct-option selected](docs/correct-card.png)
 ![Incorrect option selected](docs/incorrect-card.png)
 ![same option selected](docs/same-card.png)
@@ -147,14 +148,17 @@ Lighthouse from the Chrome Developer tools was used to test the performance, acc
 ### Desktop Results
 
 - Index page
+  - Their is a unfix bugs which is stated below in Unfixed Bugs
 
-  ![Home Page Lighthouse testing desktop](docs/home-page-desktop-lighthouse.png)
+  ![Index Page Lighthouse testing desktop](docs/desktop-lighthouse.png)
 
 ### Mobile Results
 
 - Index page
-
-  ![Home Page Lighthouse testing desktop](docs/home-page-mobile-lighthouse.png)
+  - 2 results in mobile and the bug is fixed below in Unfixed Bugs
+  
+  ![Index Page Lighthouse testing desktop](docs/mobile-lighthouse1.png)
+  ![Index Page Lighthouse testing desktop](docs/mobile-lighthouse2.png)
 
 ## Manual Testing
 
