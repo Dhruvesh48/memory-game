@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function() {
         this.src = cardArray[cardId].img;
         // check if user as selected 2 cards or not
         if(cardsName.length === 2){
-            setTimeout(checkCards, 100);
+            setTimeout(checkCards, 250);
         }
     }
 
