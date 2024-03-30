@@ -71,7 +71,7 @@ Memory Game colour palette
 ### Imagery  
 
 ---
-All of the images used on this site is from the the external websites which will be credited in the credit section.
+All of the images used on this site is from the external websites which will be credited in the credit section.
 
 ## Features
 
