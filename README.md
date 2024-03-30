@@ -98,11 +98,21 @@ The page of the website have :
 #### Index Page
 
 ---
-The Index Page is divided into Three sections:
+The Index Page is divided into Four sections:
 
 - The Title of the game
-- The game with all the images
+  - Featured at the top of the page, the memory game heading is easy to see for the user.
+![Logo](media/love_maths_logo.png)
+- The game section
+  - This section will allow the user to play the memory game. The user will be able to easily see the back side of the card.
+  - The user will be able to select the any 2 cards and it will show which card user have selected.
+![Logo](media/love_maths_logo.png)
+- Alert section
+  - This is where the user receives an alert after they choose two cards, indicating whether they are correct or incorrect.
+![Logo](media/love_maths_logo.png)
 - The reset button
+  - This is where user can restart the game anytime they want it will randomise the cards.
+![Logo](media/love_maths_logo.png)
 
 ![Index page image](docs/home-page-responsive-image.png)
 
@@ -111,14 +121,16 @@ The Index Page is divided into Three sections:
 
 ---
 
+- Memory game will have scores added to the side game.
+- It will also have better css so the cards look like they are flipping.
 - The website name will change instead of Memory Game.
-- On the main page user will get option to play more similar games like .
-- Their will be links of other website for the user who wants to know more details about the specific topic.
-- New action form will be created letting user know they are signed in.
+- More simlar games will be added.
+- On the main page user will have option to choose what game they want to play.
+- New html page will be created letting user login into their account.
 
 ---
 
-## Medical History - TESTING DOCUMENTATION
+## Memory Game - TESTING DOCUMENTATION
 
 ---
 
@@ -126,12 +138,11 @@ The Index Page is divided into Three sections:
   
 ### W3C Validator
 
-[W3C](https://validator.w3.org/) was used to validate all HTML pages, as well as the [CSS](https://jigsaw.w3.org/css-validator/#validate_by_uri).
+[W3C](https://validator.w3.org/) was used to validate HTML page, [CSS](https://jigsaw.w3.org/css-validator/#validate_by_uri) was used to validate css page, 
   
-- [Home page W3C HTML Validation](docs/home-page-HTML-validator.png) - Pass
-- [More-topic page W3C HTML Validation](docs/more-topic-HTML-validator.png) - Pass
-- [sign up page W3C HTML Validation](docs/signup-HTML-validator.png) - Pass
+- [Index page W3C HTML Validation](docs/home-page-HTML-validator.png) - Pass
 - [style.css CSS Validation](docs/CSS-validator.png) - Pass
+- [sign up page W3C HTML Validation](docs/signup-HTML-validator.png) - Pass
 
 ---
 
@@ -141,27 +152,15 @@ Lighthouse from the Chrome Developer tools was used to test the performance, acc
 
 ### Desktop Results
 
-- Home page
+- Index page
 
   ![Home Page Lighthouse testing desktop](docs/home-page-desktop-lighthouse.png)
-- More-topic page
-
-  ![more-topic page Lighthouse testing desktop](docs/more-topic-desktop-lighthouse.png)
-- Sign up page
-
-  ![sign up page Lighthouse testing desktop](docs/signup-desktop-lighthouse.png)
 
 ### Mobile Results
 
-- Home page
+- Index page
 
   ![Home Page Lighthouse testing desktop](docs/home-page-mobile-lighthouse.png)
-- More-topic page
-
-  ![more-topic page Lighthouse testing desktop](docs/more-topic-mobile-lighthouse.png)
-- Sign up page
-
-  ![sign up page Lighthouse testing desktop](docs/signup-mobile-lighthouse.png)
 
 ## Manual Testing
 
@@ -177,41 +176,22 @@ Each page has been inspected on variety of devices such as mobile, laptop, deskt
   
 ![Home page Mobile device](docs/home-page-mobile-device.png)
 
-- More topic page Mobile device
-
-![More topic page Mobile device](docs/more-topic-mobile-page.png)
-
-- Sign up page Mobile device
-
-![Sign up page Mobile device](docs/signup-mobile-page.png)
 
 - Home page Desktop device
   
 ![Home page Desktop device](docs/home-desktop-page.png)
 
-- More topic page Desktop device
-
-![More topic page Desktop device](docs/more-topic-desktop-page.png)
-
-- Sign up page Desktop device
-
-![Sign up page Desktop device](docs/signup-desktop-page.png)
 
 ### Validation
 
-- The Sign up Form:
+- The Game section:
   - This page will allow users to sign up for notifications about new updates or topics that will be released. Users will need to provide their details, including First Name, Last Name, and Email Address. If a user does not provide a First Name or Last Name, they will be prompted to fill in these details. Regarding the email address, if it is not valid, users will be asked to enter a valid email address. Once all the details are correct, users will see the Code Institute sign-up form.
 
-- The header section:
+- The reset game button:
   - Medical History name has a clickable link to the Home page.
   - Home page has a clickable link to the Home page.
   - More topic has a clickable link to the More topic page.
   - Sign up has a clickable link to the Sign up page.
-
-- The footer section:
-  - Facebook Font Awesome has a clickable link to the Facebook page.
-  - Instagram Font Awesome has a clickable link to the Instagram page.
-  - Twitter(X) Font Awesome has a clickable link to the Twitter(X) page.
 
 ## Accessibility
 
