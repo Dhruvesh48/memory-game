@@ -137,7 +137,7 @@ The Index Page is divided into Four sections:
   
 - [Index page W3C HTML Validation](docs/html-checker.png) - Pass
 - [style.css CSS Validation](docs/css-checker.png) - Pass
-- [script.js JavaScript Validation](docs/signup-HTML-validator.png) - Pass
+- [script.js JavaScript Validation](docs/javascript-validator.png) - Pass
 
 ---
 
@@ -156,7 +156,7 @@ Lighthouse from the Chrome Developer tools was used to test the performance, acc
 
 - Index page
   - 2 results in mobile and the bug is fixed below in Unfixed Bugs
-  
+
   ![Index Page Lighthouse testing desktop](docs/mobile-lighthouse1.png)
   ![Index Page Lighthouse testing desktop](docs/mobile-lighthouse2.png)
 
@@ -286,6 +286,7 @@ HTML, CSS and JavaScript are the languages used on this website.
   - Jack playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Jack_of_hearts.svg)
   - Queen playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Queen_of_clubs.svg)
   - King playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:King_of_diamonds.svg)
+  - window.location.reload() on line 20 is from [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/Location/reload)
 
 - JavScript(script.js)
   - function shuffleCards() on line 165 to 167 is from [JavaScript.info](https://javascript.info/task/shuffle)
