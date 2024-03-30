@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
             img: 'assets/images/king.webp',
             alt: 'King playing card'
         }
-    ]
+    ];
 
     //run the shuffleCards() function
     shuffleCards(cardArray);
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function() {
         for(let i = 0; i < cardArray.length; i++){
             // create images with class name and alt text
             let cards = document.createElement('img');
-            cards.className = 'cards'
+            cards.className = 'cards';
             cards.alt = cardArray[i].alt;
             cards.src = 'assets/images/back-card.webp';
             // set i as data-id
@@ -158,13 +158,13 @@ document.addEventListener("DOMContentLoaded", function() {
             cards.addEventListener('click', flipCards);
             // set all the images in game-area section in HTML.
             document.getElementById('game-area').appendChild(cards);
-        }
-    }
+        };
+    };
 
     //it randomise the array using in built math random function taken from a website which should be credited inside the README.md file
     function shuffleCards(array){
         array.sort(() => Math.random() - 0.5);
-    }
+    };
 
 
     //it flips the card that is selected by the user
@@ -179,9 +179,9 @@ document.addEventListener("DOMContentLoaded", function() {
         this.src = cardArray[cardId].img;
         // check if user as selected 2 cards or not
         if(cardsName.length === 2){
-            setTimeout(checkCards, 500);
-        }
-    }
+            setTimeout(checkCards, 100);
+        };
+    };
 
     //it checks the name cards compare it and hide the cards when user finds the match
     function checkCards(){
@@ -198,15 +198,15 @@ document.addEventListener("DOMContentLoaded", function() {
             cards[card1].style.visibility = 'hidden';
             cards[card2].style.visibility = 'hidden';
         }else if(card1 == card2){
-            alert('Sorry cannot choose the same card')
+            alert('Sorry cannot choose the same card');
             cards[card1].src = 'assets/images/back-card.webp';
         }
         else{
             // alert user incorrect and gets the back-card image
             cards[card1].src = 'assets/images/back-card.webp';
             cards[card2].src = 'assets/images/back-card.webp';
-            alert('Incorrect, please try again')
-        }
+            alert('Incorrect, please try again');
+        };
         //}
         //empty out array so user can choose different option
         cardsName = [];

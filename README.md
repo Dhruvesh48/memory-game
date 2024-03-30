@@ -2,8 +2,8 @@
 
 The Memory Game is a relaxing game that involves matching randomly placed cards. Its main purpose is to help users unwind from their busy day-to-day lives, reducing stress and promoting relaxation.
 
-![Screenshot of all the pages and responsiveness of the project](/docs/home-page-responsive-image.png)
-Visit the deployed site here :[Medical History](https://dhruvesh48.github.io/Project-1-html-css/)
+![Screenshot of all the pages and responsiveness of the project](docs/Index-page.png)
+Visit the deployed site here :[Medical History](https://dhruvesh48.github.io/memory-game/)
 
 ---
 
@@ -62,19 +62,11 @@ Visit the deployed site here :[Medical History](https://dhruvesh48.github.io/Pro
 
 Memory Game colour palette
 
-![Colour palette](docs/colour-palette.png)
+![Colour palette](docs/color-palettes.png)
 
-- The website uses backgound color #212549 and for the text #fffeff this are use in header(navbar), in the main body for headings, in the footer and in the sign up form.
-- In the sign up form with laptop screen or larger, the mouse hover used box shadow of #90ee90 to the form input fields to suggest what user is about to click.
-- For normal text the default color of the browser is used.
+- The website uses backgound color darkcyan(#008B8B), for the heading it uses #800000, and the reset button uses combination of 3 color #800000 for the background-color, #fff for the text and #000 for the box shadow .
+- For alt text the default color of the browser is used.
 - The colour scheme is consistent throughtout the whole website.
-
-### Typography
-
----
-Google Fonts was used to import the fonts used for this site.
-
-- The Anta font is used for the whole section of the website with serif as a backup font.
 
 ### Imagery  
 
@@ -102,19 +94,21 @@ The Index Page is divided into Four sections:
 
 - The Title of the game
   - Featured at the top of the page, the memory game heading is easy to see for the user.
-![Logo](media/love_maths_logo.png)
+![Logo](docs/logo.png)
 - The game section
-  - This section will allow the user to play the memory game. The user will be able to easily see the back side of the card.
+  - This section will allow the user to play the memory game. The user will be able to see the back side of the card.
   - The user will be able to select the any 2 cards and it will show which card user have selected.
-![Logo](media/love_maths_logo.png)
+![Game-section](docs/game-section.png)
 - Alert section
-  - This is where the user receives an alert after they choose two cards, indicating whether they are correct or incorrect.
-![Logo](media/love_maths_logo.png)
+  - This is where the user receives an alert after they choose two cards, indicating whether they are correct, incorrect or if they selected the same card.
+![Correct-option selected](docs/correct-card.png)
+![Incorrect option selected](docs/incorrect-card.png)
+![same option selected](docs/same-card.png)
 - The reset button
   - This is where user can restart the game anytime they want it will randomise the cards.
-![Logo](media/love_maths_logo.png)
+![Reset-button](docs/reset-button.png)
 
-![Index page image](docs/home-page-responsive-image.png)
+![Index page image](docs/Index-page.png)
 
 
 #### Future Features
@@ -138,11 +132,11 @@ The Index Page is divided into Four sections:
   
 ### W3C Validator
 
-[W3C](https://validator.w3.org/) was used to validate HTML page, [CSS](https://jigsaw.w3.org/css-validator/#validate_by_uri) was used to validate css page, 
+[W3C](https://validator.w3.org/) was used to validate HTML page, [CSS](https://jigsaw.w3.org/css-validator/#validate_by_uri) was used to validate css page, [JavaScript](https://jshint.com/) was used to validate JavaScript page.
   
-- [Index page W3C HTML Validation](docs/home-page-HTML-validator.png) - Pass
-- [style.css CSS Validation](docs/CSS-validator.png) - Pass
-- [sign up page W3C HTML Validation](docs/signup-HTML-validator.png) - Pass
+- [Index page W3C HTML Validation](docs/html-checker.png) - Pass
+- [style.css CSS Validation](docs/css-checker.png) - Pass
+- [script.js JavaScript Validation](docs/signup-HTML-validator.png) - Pass
 
 ---
 
@@ -170,63 +164,68 @@ Lighthouse from the Chrome Developer tools was used to test the performance, acc
 
 Each page has been inspected on variety of devices such as mobile, laptop, desktop. Moreover, they have been tested on multiple browser such as Google, Microsoft edge.
 
-![Medical History responsiveness include all pages](docs/Multiple-page-responsive.png)
+![Medical History responsiveness include all pages](docs/Index-page.png)
 
 - Home page Mobile device
   
-![Home page Mobile device](docs/home-page-mobile-device.png)
+![Index page Mobile device](docs/mobile-version.png)
+
+![Index page landscape Mobile device](docs/mobile-landscape-version.png)
 
 
 - Home page Desktop device
   
-![Home page Desktop device](docs/home-desktop-page.png)
+![Index page Desktop device](docs/desktop-version.png)
 
 
 ### Validation
 
 - The Game section:
-  - This page will allow users to sign up for notifications about new updates or topics that will be released. Users will need to provide their details, including First Name, Last Name, and Email Address. If a user does not provide a First Name or Last Name, they will be prompted to fill in these details. Regarding the email address, if it is not valid, users will be asked to enter a valid email address. Once all the details are correct, users will see the Code Institute sign-up form.
+  - checking back-card image display on the game-section
+  - clicking the image and display the play card
+  - checking all alerts working
+  - if correct then alert correct and display hidden
+  - if incorrect then alert incorrect and display back-card image
+  - if choosen the same card alert try again display back-card image
 
 - The reset game button:
-  - Medical History name has a clickable link to the Home page.
-  - Home page has a clickable link to the Home page.
-  - More topic has a clickable link to the More topic page.
-  - Sign up has a clickable link to the Sign up page.
+  - clicking the reset button and it should restart the game by reloading the website
+  - after clicking the reset button should change the background-color from #800000 to #fff
+
+### Unfixed Bugs
+- Poor performance by lighthouse:
+  - The reason for the poor performance was large layout shift this is because the images keep changing by JavaScript as it is one of the feature of the game to randomise each card every game user play and so the layout shift occurs.
 
 ## Accessibility
 
 ---
 Care has been taken throughout the coding to ensure that this website is as accessible friendly as possible. Particular attention has been given to the following points:
 
-- Using semantic HTML.
 - Ensuring sufficient contrast between the text and its respective background.
 - Using a box shadown color for the buttons and the text input fields.
-- Using large checkboxes in the sign up form.
 - The use of accurate alt descriptions for the images used in the website.
-- Used hover border-bottom line below the navbar, easier for users to navigate.
 - The css section is in alphabetically order for easier accessibility.
+- JavaScript code well commented explaining all the commads that is carried out by script.js file
 
 ## Technologies used
 
 #### Language used
 
-HTML and CSS are the languages used on this website.
+HTML, CSS and JavaScript are the languages used on this website.
 
 #### Frameworks, Libraries & Programs Used
 
 - [Favicon.io](https://favicon.io/) - To create and download the favicon logo.
-- [Google HTML/CSS style guide](https://google.github.io/styleguide/htmlcssguide.html) - To create proper pages with rules.
 - [ui.dev](https://ui.dev/amiresponsive) - To create views of the website on different viewing devices.
-- [Google Fonts](https://fonts.google.com/) - for importing the font families used.
-- [Font awesome](https://fontawesome.com/) - for the social media and navbar burger icons.
 - [W3C HTML validator](https://validator.w3.org/) - To validate all the HTML file.
 - [W3C CSS validator](https://jigsaw.w3.org/css-validator/) - To validate CSS file.
+- [JSHint JavaScript Validator](https://jshint.com/) - To validate JavaScript file.
 - [Google Dev tools](https://developer.chrome.com/docs/) - to troubleshoot and test issues during the development.
 - [MDN webdocs](https://developer.mozilla.org/en-US/) - reference
 - [W3C schools](https://www.w3schools.com/) - for resolving code format in CSS and HTML.
-- [Huemint](https://huemint.com/brand-intersection/) - for choosing the color palettes.
+- [Color Hunt](https://colorhunt.co/) - for choosing the color palettes.
 - [Compress-or-Die](https://compress-or-die.com/webp) - for compressing the image and changing its format to webp.
-- [Flaticon](https://www.flaticon.com/free-icons/injection) - for favicon icon image.
+- [Freepik](https://www.freepik.com/icon/memory-game_6168842) - for favicon icon image.
 
 ## Deployment
 
@@ -265,27 +264,26 @@ HTML and CSS are the languages used on this website.
 
 ## Credits
 
-### Content
-
-- The text in index.html in the section First rabies vaccine the first opening section about Louis Pasteur and the boy is taken from [CDC](https://www.cdc.gov/mmwr/preview/mmwrhtml/00000572.htm#:~:text=On%20July%206%2C%201885%2C%20Louis,rabid%20dog%202%20days%20before)
-
 ### Media
 
-- Home page
-  - Starting image and First vaccination section image is from [wikipedia](https://en.wikipedia.org/wiki/Edward_Jenner)
-  - Vaccination section image is from [Queen Camel Medical Centre](https://www.queencamelmedicalcentre.co.uk/flu-and-covid-vaccinations/)
-  - Variolation section image is from [Journal of Trauma and Injury](https://www.jtraumainj.org/journal/view.php?number=1218)
-  - First rabies vaccine section image is from [PBS](https://www.pbs.org/newshour/health/louis-pasteurs-risky-move-to-save-a-boy-from-almost-certain-death)
-  - Development of Vaccines section image is from [Understanding Animal Research](https://www.understandinganimalresearch.org.uk/resources/infographics/history-of-vaccines-timeline)
-  - Elimination Efforts section image is from [Freepik](https://www.freepik.com/vectors/virus-eradication/5)
+- Index page(HTML)
+  - Favicon of the memory game is from [Freepik](https://www.freepik.com/icon/memory-game_6168842)
+  - Back-card image is from [Creative market](https://creativemarket.com/Sunny_Lion/29849-Playing-Card-Back-Designs?epik=dj0yJnU9UVZ0SlVvdUJMdWhxNi1hT01ZamdQS2VfX1daaVFTbGomcD0wJm49WjhfcWlSbGpSSVdIb0ZBcGQtSEdBdyZ0PUFBQUFBR1lJWTE4)
+  - Ace playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Aceofspades.svg)
+  - Two playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:2_of_spades.svg)
+  - Three playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Playing_card_diamond_3.svg)
+  - Four playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Playing_card_club_4.svg)
+  - Five playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Playing_card_heart_5.svg)
+  - Six playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:6_of_spades.svg)
+  - Seven playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Playing_card_heart_7.svg)
+  - Eight playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Playing_card_club_8.svg)
+  - Nine playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Playing_card_heart_9.svg)
+  - Ten playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Playing_card_spade_10.svg)
+  - Jack playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Jack_of_hearts.svg)
+  - Queen playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:Queen_of_clubs.svg)
+  - King playing card is from [wikimedia commons](https://commons.wikimedia.org/wiki/File:King_of_diamonds.svg)
 
-- More topic page
-  - History of Pandemics section image is from [My Bio source](https://www.mybiosource.com/learn/history-of-pandemics/)
-  - First medical drug section image is from [ATSE](https://www.atse.org.au/news-and-events/article/what-was-the-first-medicine-to-be-invented-in-a-laboratory/)
-  - Development in surgery section image is from [LP FERGUSSON](https://lpfergusson.com/2016/05/13/barber-surgeons/)
-  - History of child birth section image is from [The Guardian](https://www.theguardian.com/books/2021/jan/26/i-enjoyed-researching-the-bloody-history-of-childbirth-then-i-had-a-baby-outlawed-anna-north)
-  - Development in health care section image is from [NIHR](https://bepartofresearch.nihr.ac.uk/articles/history-healthcare-research/)
-  - More updates coming soon section image is from [The Fortis Lite](https://panel.com.sg/portfolio/more-coming-soon/)
-
-- Sign up page
-  - Background image is from [The Royal Society of Medicine](https://www.rsm.ac.uk/sections/history-of-medicine-society/)
+- JavScript(script.js)
+  - function shuffleCards() on line 165 to 167 is from [JavaScript.info](https://javascript.info/task/shuffle)
+  - setAttribute on line 156 is from [W3School](https://www.w3schools.com/jsref/met_element_setattribute.asp)
+  - setTimeout on line 182 id from [W3School](https://www.w3schools.com/jsref/met_win_settimeout.asp)
