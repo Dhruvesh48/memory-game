@@ -30,7 +30,7 @@ Visit the deployed site here :[Medical History](https://dhruvesh48.github.io/mem
 
 #### Client Goals
 
-- To be able to view the website and play on a variety of device sizes.
+- To be able to view the website and play on a variety of devices.
 - To be able to interact with cards.
 - To be able to select 2 cards.
 - To be able to view their choices of the game(correct/incorrect).
@@ -40,17 +40,17 @@ Visit the deployed site here :[Medical History](https://dhruvesh48.github.io/mem
 
 - I want to play a relaxing game.
 - I want to see the images and can interact.
-- I want to be able tell if I got correct answer or not.
+- I want to be able tell if I got correct or incorrect answer.
 - I want to be able to reset the game.
 
 #### Returning Visitor Goals
 
-- I want to play a relxing game.
+- I want to play a relaxing game.
 - I want to be able to play the game again.
   
 #### Frequent Visitor Goals
 
-- I want to see differet possibilities of out come everytime.
+- I want to see different possibilities of outcome everytime.
 
 ---
 
@@ -64,7 +64,7 @@ Memory Game colour palette
 
 ![Colour palette](docs/color-palettes.png)
 
-- The website uses backgound color darkcyan(#008B8B), for the heading it uses #800000, and the reset button uses combination of 3 color #800000 for the background-color, #fff for the text and #000 for the box shadow .
+- The website uses background-color darkcyan(#008B8B), for the heading it uses #800000, and the reset button uses combination of 3 color #800000 for the background-color, #fff for the text and #000 for the box shadow .
 - For alt text the default color of the browser is used.
 - The colour scheme is consistent throughtout the whole website.
 
@@ -90,14 +90,14 @@ The page of the website have :
 #### Index Page
 
 ---
-The Index Page is divided into Four sections:
+The Index Page is divided into four sections:
 
 - The Title of the game
   - Featured at the top of the page, the memory game heading is easy to see for the user.
 ![Logo](docs/logo.png)
 - The game section
   - This section will allow the user to play the memory game. The user will be able to see the back side of the card.
-  - The user will be able to select the any 2 cards and it will show which card user have selected.
+  - The user will be able to select any 2 cards and it will show which card the user have selected.
 ![Game-section](docs/game-section.png)
 - Alert section
   - This is where the user receives an alert after they choose two cards, indicating whether they are correct, incorrect or if they selected the same card.
@@ -106,7 +106,7 @@ The Index Page is divided into Four sections:
 ![Incorrect option selected](docs/incorrect-card.png)
 ![same option selected](docs/same-card.png)
 - The reset button
-  - This is where user can restart the game anytime they want it will randomise the cards.
+  - This is where the user can restart the game anytime they want and it will randomly place the cards again. 
 ![Reset-button](docs/reset-button.png)
 
 ![Index page image](docs/Index-page.png)
@@ -117,7 +117,7 @@ The Index Page is divided into Four sections:
 ---
 
 - Memory game will have scores added to the side game.
-- It will also have better css so the cards look like they are flipping.
+- It will have better css so the cards look like they are flipping.
 - The website name will change instead of Memory Game.
 - More simlar games will be added.
 - On the main page user will have option to choose what game they want to play.
@@ -148,14 +148,14 @@ Lighthouse from the Chrome Developer tools was used to test the performance, acc
 ### Desktop Results
 
 - Index page
-  - Their is a unfix bugs which is stated below in Unfixed Bugs
+  - There is a unfix bugs which is stated below in Unfixed Bugs
 
   ![Index Page Lighthouse testing desktop](docs/desktop-lighthouse.png)
 
 ### Mobile Results
 
 - Index page
-  - 2 results in mobile and the bug is fixed below in Unfixed Bugs
+  - 2 results in mobile and the bug is stated below in Unfixed Bugs
 
   ![Index Page Lighthouse testing desktop](docs/mobile-lighthouse1.png)
   ![Index Page Lighthouse testing desktop](docs/mobile-lighthouse2.png)
@@ -194,7 +194,7 @@ Each page has been inspected on variety of devices such as mobile, laptop, deskt
 
 - The reset game button:
   - clicking the reset button and it should restart the game by reloading the website
-  - after clicking the reset button should change the background-color from #800000 to #fff
+  - after clicking the reset button it should change the background-color from #800000 to #fff
 
 ### Unfixed Bugs
 - Poor performance by lighthouse:
@@ -206,10 +206,10 @@ Each page has been inspected on variety of devices such as mobile, laptop, deskt
 Care has been taken throughout the coding to ensure that this website is as accessible friendly as possible. Particular attention has been given to the following points:
 
 - Ensuring sufficient contrast between the text and its respective background.
-- Using a box shadown color for the buttons and the text input fields.
+- Using a box shadow color for the buttons and the text input fields.
 - The use of accurate alt descriptions for the images used in the website.
 - The css section is in alphabetically order for easier accessibility.
-- JavaScript code well commented explaining all the commads that is carried out by script.js file
+- JavaScript code well commented explaining all the commands that is carried out by script.js file
 
 ## Technologies used
 
